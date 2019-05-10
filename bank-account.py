@@ -3,7 +3,15 @@ class BankAccount:
     self.balance = balance
     self.interest_rate = interest
 
+  def __str__(self):
+    return f"Balance: {self.balance} \nInterest Rate: {self.interest_rate * 100}%"
+
+  def deposit(self, amount):
+    self.balance += amount
+
 my_account = BankAccount(5000, 0.03)
 
-print(my_account.balance)
-print(my_account.interest_rate)
+print(my_account)
+
+my_account.deposit(1500)
+print(my_account)
