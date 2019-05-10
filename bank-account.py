@@ -17,8 +17,10 @@ class BankAccount:
 
 my_account = BankAccount(5000, 0.03)
 
+print('--------------------------------')
+print('MY ACCOUNT')
+print('--------------------------------')
 print(my_account)
-
 
 print('--------------------------------')
 print('DEPOSIT 1500')
