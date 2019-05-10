@@ -9,9 +9,15 @@ class BankAccount:
   def deposit(self, amount):
     self.balance += amount
 
+  def withdraw(self, amount):
+    self.balance -= amount
+
 my_account = BankAccount(5000, 0.03)
 
 print(my_account)
 
 my_account.deposit(1500)
+print(my_account)
+
+my_account.withdraw(150)
 print(my_account)
